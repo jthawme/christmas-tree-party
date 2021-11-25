@@ -1,0 +1,11 @@
+Model Information:
+* title:	rainbow-pixel-art
+* source:	https://sketchfab.com/3d-models/rainbow-pixel-art-9fba22f4a3ab4d1695506af1e82e3e5c
+* author:	madexc (https://sketchfab.com/madexc)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "rainbow-pixel-art" (https://sketchfab.com/3d-models/rainbow-pixel-art-9fba22f4a3ab4d1695506af1e82e3e5c) by madexc (https://sketchfab.com/madexc) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)

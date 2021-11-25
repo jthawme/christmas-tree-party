@@ -1,0 +1,237 @@
+{
+  "asset": {
+    "generator": "Khronos glTF Blender I/O v1.4.40",
+    "version": "2.0"
+  },
+  "scene": 0,
+  "scenes": [
+    {
+      "name": "Scene",
+      "nodes": [0]
+    }
+  ],
+  "nodes": [
+    {
+      "mesh": 0,
+      "name": "Car01_1_AdB",
+      "translation": [0, 0, 0]
+    }
+  ],
+  "materials": [
+    {
+      "doubleSided": true,
+      "name": "mt_Pallete_Blue",
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          0.800000011920929, 0.800000011920929, 0.800000011920929, 1
+        ],
+        "metallicFactor": 0,
+        "roughnessFactor": 0.5
+      }
+    },
+    {
+      "doubleSided": true,
+      "name": "mt_PalleteBR",
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          0.800000011920929, 0.800000011920929, 0.800000011920929, 1
+        ],
+        "metallicFactor": 0,
+        "roughnessFactor": 0.5
+      }
+    },
+    {
+      "doubleSided": true,
+      "name": "mt_PalleteBR_Glass",
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          0.800000011920929, 0.800000011920929, 0.800000011920929, 1
+        ],
+        "metallicFactor": 0,
+        "roughnessFactor": 0.5
+      }
+    }
+  ],
+  "meshes": [
+    {
+      "name": "Cube.011",
+      "primitives": [
+        {
+          "attributes": {
+            "POSITION": 0,
+            "NORMAL": 1,
+            "TEXCOORD_0": 2
+          },
+          "indices": 3,
+          "material": 0
+        },
+        {
+          "attributes": {
+            "POSITION": 4,
+            "NORMAL": 5,
+            "TEXCOORD_0": 6
+          },
+          "indices": 7,
+          "material": 1
+        },
+        {
+          "attributes": {
+            "POSITION": 8,
+            "NORMAL": 9,
+            "TEXCOORD_0": 10
+          },
+          "indices": 11,
+          "material": 2
+        }
+      ]
+    }
+  ],
+  "accessors": [
+    {
+      "bufferView": 0,
+      "componentType": 5126,
+      "count": 663,
+      "max": [1.2192320823669434, 2.0688953399658203, 1.7574495077133179],
+      "min": [-1.2192320823669434, -0.42162391543388367, -1.8468449115753174],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 1,
+      "componentType": 5126,
+      "count": 663,
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 2,
+      "componentType": 5126,
+      "count": 663,
+      "type": "VEC2"
+    },
+    {
+      "bufferView": 3,
+      "componentType": 5123,
+      "count": 1584,
+      "type": "SCALAR"
+    },
+    {
+      "bufferView": 4,
+      "componentType": 5126,
+      "count": 2501,
+      "max": [1.2810425758361816, 2.004661798477173, 1.782619833946228],
+      "min": [-1.2810425758361816, -0.7504845261573792, -1.8468449115753174],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 5,
+      "componentType": 5126,
+      "count": 2501,
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 6,
+      "componentType": 5126,
+      "count": 2501,
+      "type": "VEC2"
+    },
+    {
+      "bufferView": 7,
+      "componentType": 5123,
+      "count": 4236,
+      "type": "SCALAR"
+    },
+    {
+      "bufferView": 8,
+      "componentType": 5126,
+      "count": 48,
+      "max": [1.1127800941467285, 1.9919698238372803, 1.0000154972076416],
+      "min": [-1.1127800941467285, 0.6459389925003052, -1.003148078918457],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 9,
+      "componentType": 5126,
+      "count": 48,
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 10,
+      "componentType": 5126,
+      "count": 48,
+      "type": "VEC2"
+    },
+    {
+      "bufferView": 11,
+      "componentType": 5123,
+      "count": 84,
+      "type": "SCALAR"
+    }
+  ],
+  "bufferViews": [
+    {
+      "buffer": 0,
+      "byteLength": 7956,
+      "byteOffset": 0
+    },
+    {
+      "buffer": 0,
+      "byteLength": 7956,
+      "byteOffset": 7956
+    },
+    {
+      "buffer": 0,
+      "byteLength": 5304,
+      "byteOffset": 15912
+    },
+    {
+      "buffer": 0,
+      "byteLength": 3168,
+      "byteOffset": 21216
+    },
+    {
+      "buffer": 0,
+      "byteLength": 30012,
+      "byteOffset": 24384
+    },
+    {
+      "buffer": 0,
+      "byteLength": 30012,
+      "byteOffset": 54396
+    },
+    {
+      "buffer": 0,
+      "byteLength": 20008,
+      "byteOffset": 84408
+    },
+    {
+      "buffer": 0,
+      "byteLength": 8472,
+      "byteOffset": 104416
+    },
+    {
+      "buffer": 0,
+      "byteLength": 576,
+      "byteOffset": 112888
+    },
+    {
+      "buffer": 0,
+      "byteLength": 576,
+      "byteOffset": 113464
+    },
+    {
+      "buffer": 0,
+      "byteLength": 384,
+      "byteOffset": 114040
+    },
+    {
+      "buffer": 0,
+      "byteLength": 168,
+      "byteOffset": 114424
+    }
+  ],
+  "buffers": [
+    {
+      "byteLength": 114592,
+      "uri": "car.bin"
+    }
+  ]
+}

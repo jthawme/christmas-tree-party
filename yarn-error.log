@@ -1,0 +1,62 @@
+Arguments: 
+  /Users/jthaw/.nvm/versions/node/v14.17.1/bin/node /Users/jthaw/.yarn/bin/yarn.js install
+
+PATH: 
+  /Users/jthaw/.serverless/bin:/Users/jthaw/.yarn/bin:/Users/jthaw/.config/yarn/global/node_modules/.bin:/Users/jthaw/.nvm/versions/node/v14.17.1/bin:/Applications/Postgres.app/Contents/Versions/latest/bin:/usr/local/opt/ruby/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Library/Apple/usr/bin:/Users/jthaw/.rvm/bin:/Users/jonathanthaw/woff2
+
+Yarn version: 
+  1.22.4
+
+Node version: 
+  14.17.1
+
+Platform: 
+  darwin x64
+
+Trace: 
+  SyntaxError: /Users/jthaw/Documents/code/christmas-tree-party/package.json: Unexpected token } in JSON at position 608
+      at JSON.parse (<anonymous>)
+      at /Users/jthaw/.yarn/lib/cli.js:1625:59
+      at Generator.next (<anonymous>)
+      at step (/Users/jthaw/.yarn/lib/cli.js:310:30)
+      at /Users/jthaw/.yarn/lib/cli.js:321:13
+
+npm manifest: 
+  {
+    "name": "christmas-tree-party",
+    "version": "1.0.0",
+    "private": true,
+    "scripts": {
+      "dev": "nuxt",
+      "build": "nuxt build",
+      "start": "nuxt start",
+      "generate": "nuxt generate"
+    },
+    "dependencies": {
+      "@nuxt/http": "^0.6.4",
+      "@nuxtjs/markdownit": "^2.0.0",
+      "@nuxtjs/pwa": "^3.3.5",
+      "@nuxtjs/style-resources": "^1.2.1",
+      "@nuxtjs/svg": "^0.3.0",
+      "core-js": "^3.15.1",
+      "dotenv": "^10.0.0",
+      "nanoid": "^3.1.30",
+      "normalize.css": "^8.0.1",
+      "nuxt": "^2.15.7",
+      "smoothscroll-polyfill": "^0.4.4",
+      "stats.js": "^0.17.0",
+      "three": "^0.134.0",
+    },
+    "devDependencies": {
+      "eslint-config-prettier": "^8.3.0",
+      "prettier": "^2.3.2",
+      "sass": "^1.43.4",
+      "sass-loader": "^10.1.1"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
