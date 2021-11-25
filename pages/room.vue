@@ -1,5 +1,6 @@
 <template>
   <div class="main">
+    <nuxt-link to="/" class="make">Add your own</nuxt-link>
     <Scene :debug="debug" class="three" :perspective="perspective">
       <Room :debug="debug">
         <Banner :z="-10" :text="bannerText" />
@@ -121,5 +122,28 @@ export default {
 <style lang="scss" scoped>
 .three {
   height: 100vh;
+}
+
+.make {
+  position: fixed;
+
+  bottom: 50px;
+  left: 50%;
+
+  transform: translate3d(-50%, 0, 0);
+
+  background-color: red;
+  padding: 10px 20px;
+
+  color: white;
+
+  z-index: 100;
+  text-decoration: none;
+  text-transform: uppercase;
+
+  &:hover,
+  &:focus-visible {
+    opacity: 0.75;
+  }
 }
 </style>
