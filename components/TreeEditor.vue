@@ -29,6 +29,8 @@
         </DragItem>
       </div>
 
+      <div class="display" v-if="displayText">{{ displayText }}</div>
+
       <div class="text">
         <input
           placeholder="Type message here..."
@@ -64,7 +66,7 @@
 <script>
 import { addTree } from "~/assets/js/db";
 import { nanoid } from "nanoid";
-import { loadImage } from "~/assets/js/utils";
+import { loadImage, timer } from "~/assets/js/utils";
 import Canvas from "./common/Canvas.vue";
 import DragItem from "./common/DragItem.vue";
 
@@ -78,6 +80,7 @@ export default {
   },
   data() {
     return {
+      displayText: null,
       inputText: "",
       mountCanvas: false,
       activeDrop: false,
@@ -182,9 +185,14 @@ export default {
     async onSave() {
       this.saving = true;
 
+      if (!this.inputText || this.parts.length === 0) {
+        this.addMessage("Add a message and add items to the tree");
+        return;
+      }
+
       await addTree(this.id, {
         text: this.inputText,
-        parts: this.parts.slice(),
+        parts: this.parts.slice(0, 50),
       }).then(() =>
         this.addMessage("Tree added! Click 'View all' to see them")
       );
@@ -255,6 +263,13 @@ export default {
     },
     onResize() {
       this.draw();
+    },
+    addMessage(txt) {
+      this.displayText = txt;
+
+      timer(2500).then(() => {
+        this.displayText = null;
+      });
     },
     onItemDrop(data) {
       if (this.saving) {
@@ -344,7 +359,8 @@ export default {
     justify-content: center;
 
     @include tablet {
-      padding-bottom: 100px;
+      padding-bottom: 60px;
+      max-height: 100vh;
     }
   }
 }
@@ -422,5 +438,16 @@ export default {
   span {
     flex-grow: 1;
   }
+}
+
+.layers {
+  @include tablet {
+    flex-grow: 1;
+    overflow: auto;
+  }
+}
+
+.display {
+  padding: 20px;
 }
 </style>

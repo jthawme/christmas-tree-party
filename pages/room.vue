@@ -86,7 +86,7 @@ export default {
       });
       this.trees = sorted.reverse();
     });
-    listenForTrees((id, tree) => {
+    this.unlisten = listenForTrees((id, tree) => {
       const idx = this.trees.findIndex((t) => t.id === id);
 
       if (idx < 0) {
@@ -104,6 +104,9 @@ export default {
         });
       }
     });
+  },
+  beforeDestroy() {
+    this.unlisten();
   },
   data() {
     return {

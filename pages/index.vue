@@ -32,7 +32,7 @@ export default {
   },
   methods: {
     onUpdate(parts) {
-      this.parts = parts.slice();
+      this.parts = parts.slice(0, 50);
     },
   },
 };

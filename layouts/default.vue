@@ -1,10 +1,15 @@
 <template>
   <div>
+    <a
+      class="github"
+      href="https://github.com/jthawme/christmas-tree-party"
+      target="_blank"
+      >View on github</a
+    >
+
     <main>
       <nuxt />
     </main>
-
-    <Toast />
   </div>
 </template>
 
@@ -136,5 +141,19 @@ body {
 
 img {
   max-width: 100%;
+}
+
+.github {
+  position: fixed;
+
+  top: 0;
+  left: 0;
+
+  padding: 5px;
+  font-size: 10px;
+  background-color: black;
+  color: white;
+
+  z-index: 100;
 }
 </style>

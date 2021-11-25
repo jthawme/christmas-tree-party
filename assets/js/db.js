@@ -7,6 +7,7 @@ import {
   child,
   onChildAdded,
   onChildChanged,
+  off,
 } from "firebase/database";
 
 const firebaseConfig = {
@@ -49,6 +50,11 @@ export const listenForTrees = (cb) => {
 
   onChildAdded(treesRef, onUpdate);
   onChildChanged(treesRef, onUpdate);
+
+  return () => {
+    off(treesRef, "child_added");
+    off(treesRef, "child_changed");
+  };
 };
 
 export const addTree = (id, value) => {

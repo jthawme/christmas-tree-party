@@ -1,7 +1,7 @@
 const PROJECT_TITLE = "Christmas Tree Party";
 const PROJECT_DESCRIPTION = "Add a tree to the party";
 const PROJECT_KEYWORDS = "Christmas Tree Party"; // add more
-const PROJECT_DOMAIN = "https://xmas-party.jthaw.club";
+const PROJECT_DOMAIN = "https://christmas-party.jthaw.club";
 
 export default {
   // Target: https://go.nuxtjs.dev/config-target
@@ -46,7 +46,7 @@ export default {
       },
       {
         name: "twitter:image:src",
-        content: `${PROJECT_DOMAIN}/social/twitter.png`,
+        content: `${PROJECT_DOMAIN}/social/sharecard.png`,
       },
       {
         name: "og:title",
@@ -62,7 +62,7 @@ export default {
       {
         name: "og:image",
         property: "og:image",
-        content: `${PROJECT_DOMAIN}/social/facebook.png`,
+        content: `${PROJECT_DOMAIN}/social/sharecard.png`,
       },
       {
         name: "og:description",
